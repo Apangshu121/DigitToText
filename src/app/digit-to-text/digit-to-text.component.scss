@@ -1,0 +1,40 @@
+// my-component.component.scss
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.center-box {
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  label {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+  }
+
+  div[ngIf] {
+      text-align: center;
+  }
+}
+

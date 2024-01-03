@@ -1,0 +1,15 @@
+<!-- digit-to-text.component.html -->
+
+<!-- my-component.component.html -->
+<div class="container">
+  <h1>Number To Text Convertor</h1>
+  <div class="center-box">
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput" [(ngModel)]="inputValue" />
+  
+    <div *ngIf="inputValue !== undefined">
+      <div class="digitToText">Corresponding Text:</div>
+        <p>{{ inputValue | digitToText }}</p>
+    </div>
+  </div>
+</div>
